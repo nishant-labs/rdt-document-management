@@ -1,13 +1,14 @@
 import React, { useCallback, useContext, useState } from 'react';
-import { fetchGDPFromWorldBank } from '../utils/http';
-import { EnvConfigContext } from './env-config-context';
+import { fetchGDPFromWorldBank } from '../../utils/http';
+import { EnvConfigContext } from '../env-config-context';
 
 export const GdpContext = React.createContext();
+export const GdpContextConsumer = GdpContext.Consumer;
 
 export const GdpContextProvider = ({ children }) => {
 	const { envConfigData } = useContext(EnvConfigContext);
 	const [gdpData, setGdpData] = useState();
-	const [gdpApiError, setError] = useState();
+	const [gdpApiError, setGdpApiError] = useState();
 
 	const fetchGdp = useCallback(
 		async (fullYear) => {
@@ -16,13 +17,20 @@ export const GdpContextProvider = ({ children }) => {
 				fullYear
 			);
 			setGdpData(payload);
-			setError(error);
+			setGdpApiError(error);
 		},
 		[envConfigData]
 	);
 
+	const resetGdpData = useCallback(() => {
+		setGdpData(undefined);
+		setGdpApiError(undefined);
+	}, []);
+
 	return (
-		<GdpContext.Provider value={{ gdpData, gdpApiError, fetchGdp }}>
+		<GdpContext.Provider
+			value={{ gdpData, gdpApiError, fetchGdp, resetGdpData }}
+		>
 			{children}
 		</GdpContext.Provider>
 	);
