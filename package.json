@@ -23,6 +23,7 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"lint": "eslint './src'",
+		"lint:fix": "eslint './src' --fix",
 		"format": "prettier './src' --check",
 		"format:fix": "prettier './src' -w",
 		"predeploy": "npm run build",
