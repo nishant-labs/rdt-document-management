@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/nishant-labs/rdt-document-management/static/css/main.da5a7a88.chunk.css",
+    "main.js": "/nishant-labs/rdt-document-management/static/js/main.98df11b7.chunk.js",
+    "main.js.map": "/nishant-labs/rdt-document-management/static/js/main.98df11b7.chunk.js.map",
+    "runtime-main.js": "/nishant-labs/rdt-document-management/static/js/runtime-main.d796b7f4.js",
+    "runtime-main.js.map": "/nishant-labs/rdt-document-management/static/js/runtime-main.d796b7f4.js.map",
+    "static/css/2.1ad56b46.chunk.css": "/nishant-labs/rdt-document-management/static/css/2.1ad56b46.chunk.css",
+    "static/js/2.d500df99.chunk.js": "/nishant-labs/rdt-document-management/static/js/2.d500df99.chunk.js",
+    "static/js/2.d500df99.chunk.js.map": "/nishant-labs/rdt-document-management/static/js/2.d500df99.chunk.js.map",
+    "static/js/3.2d0fc665.chunk.js": "/nishant-labs/rdt-document-management/static/js/3.2d0fc665.chunk.js",
+    "static/js/3.2d0fc665.chunk.js.map": "/nishant-labs/rdt-document-management/static/js/3.2d0fc665.chunk.js.map",
+    "index.html": "/nishant-labs/rdt-document-management/index.html",
+    "static/css/2.1ad56b46.chunk.css.map": "/nishant-labs/rdt-document-management/static/css/2.1ad56b46.chunk.css.map",
+    "static/css/main.da5a7a88.chunk.css.map": "/nishant-labs/rdt-document-management/static/css/main.da5a7a88.chunk.css.map",
+    "static/js/2.d500df99.chunk.js.LICENSE.txt": "/nishant-labs/rdt-document-management/static/js/2.d500df99.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d796b7f4.js",
+    "static/css/2.1ad56b46.chunk.css",
+    "static/js/2.d500df99.chunk.js",
+    "static/css/main.da5a7a88.chunk.css",
+    "static/js/main.98df11b7.chunk.js"
+  ]
+}
