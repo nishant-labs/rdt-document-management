@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/TypographyWithBox should render 1`] = `
+"<Styled(MuiBox) display=\\"flex\\" flexDirection=\\"row\\" justifyContent=\\"center\\" p={1}>
+  <WithStyles(ForwardRef(Typography)) variant=\\"h1\\" gutterBottom={true}>
+    This is body of the text
+  </WithStyles(ForwardRef(Typography))>
+</Styled(MuiBox)>"
+`;

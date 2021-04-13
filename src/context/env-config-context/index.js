@@ -1,1 +1,1 @@
-export * from "./env-config-context";
+export * from './env-config-context';

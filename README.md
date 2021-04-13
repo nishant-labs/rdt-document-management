@@ -1,76 +1,48 @@
 # rdt-document-management
 
-# Assumptions
-- By default api will get data for all countries
-- 
+## Assumptions (application is scalable enough to extend for any specific requirements)
+- By default api will get data for all countries in 2 separate calls
+- Only implemented default sorting and filtering
+- Only displaying country name, population and GDP
+- Displaying first 50 records only
 
-# Getting Started with Create React App
+## Decisions taken
+- Instead of page loader used text based message
+- For simplicity only handled error scenarios where api failed for any reason and only showing message instead of dedicated error page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Developers Guide
+Contributors can clone this repo using either `https` or `git` protocol as shown below
 
-### `npm start`
+```
+<!-- Clone repo -->
+git clone git@github.com:nishant-labs/rdt-document-management.git
+git clone https://github.com/nishant-labs/rdt-document-management.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- Go inside directory -->
+cd rdt-document-management
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+Then execute below commands to install and start local server
 
-### `npm test`
+```
+npm install
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Once local server is started open url http://localhost:3000/ in a browser to load application and start using it
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Demo Guide
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Once application is loaded you can see a text box where you can enter 4 digit year for which you want to see the GDP and population stats
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Below gif will help you use this website.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Use [Demo link](http://nishant-labs.github.io/nishant-labs/rdt-document-management) for live testing
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Know more about scripts
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Read [Scripts readme](docs/README.cra.md)

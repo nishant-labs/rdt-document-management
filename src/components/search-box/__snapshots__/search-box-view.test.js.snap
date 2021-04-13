@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/search-box/search-box-view should render 1`] = `
+"<ContextProvider value={{...}}>
+  <ContextProvider value={{...}}>
+    <SearchBoxView />
+  </ContextProvider>
+</ContextProvider>"
+`;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/app-management/rdt-management-app should render with correct data 1`] = `
+"<AppThemeProvider>
+  <AppLayoutContainer>
+    <TypographyWithBox type=\\"h1\\" text=\\"RDT Document Management Communicate\\" />
+    <SearchBoxView />
+    <Styled(MuiBox) p={1} display=\\"flex\\" flexDirection=\\"row\\" justifyContent=\\"center\\">
+      <GridTableContainer population={{...}} gdp={{...}} />
+    </Styled(MuiBox)>
+  </AppLayoutContainer>
+</AppThemeProvider>"
+`;
