@@ -43,7 +43,7 @@ Below gif will help you use this website.
 ![World Bank Statistics webapp demo](docs/demo.gif "World Bank Statistics")
 
 
-Use [Demo link](https://nishant-labs.github.io/rdt-document-management) for live testing
+Use <a href="https://nishant-labs.github.io/rdt-document-management" target="_blank">Demo link</a> for live testing
 
 ## Know more about scripts
 
