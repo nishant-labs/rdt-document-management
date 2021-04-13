@@ -9,16 +9,16 @@ import { GdpContextProvider } from './context/gdp-context';
 import { EnvConfigContextProvider } from './context/env-config-context';
 
 ReactDOM.render(
-	<React.StrictMode>
-		<EnvConfigContextProvider>
-			<PopulationContextProvider>
-				<GdpContextProvider>
-					<RDTDocumentManagement />
-				</GdpContextProvider>
-			</PopulationContextProvider>
-		</EnvConfigContextProvider>
-	</React.StrictMode>,
-	document.getElementById('root')
+  <React.StrictMode>
+    <EnvConfigContextProvider>
+      <PopulationContextProvider>
+        <GdpContextProvider>
+          <RDTDocumentManagement />
+        </GdpContextProvider>
+      </PopulationContextProvider>
+    </EnvConfigContextProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,1 +1,1 @@
-export { SearchBoxView as SearchBox } from "./search-box-view"
+export { SearchBoxView as SearchBox } from './search-box-view';
