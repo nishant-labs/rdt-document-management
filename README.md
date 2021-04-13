@@ -40,8 +40,10 @@ Once application is loaded you can see a text box where you can enter 4 digit ye
 
 Below gif will help you use this website.
 
+![World Bank Statistics webapp demo](docs/demo.gif "World Bank Statistics")
 
-Use [Demo link](http://nishant-labs.github.io/nishant-labs/rdt-document-management) for live testing
+
+Use [Demo link](https://nishant-labs.github.io/rdt-document-management) for live testing
 
 ## Know more about scripts
 

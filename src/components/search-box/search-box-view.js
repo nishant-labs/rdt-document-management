@@ -22,6 +22,9 @@ export const SearchBoxView = () => {
     const isInValid = value.length < 4 || isNaN(value, 10);
     setHasError(isInValid);
     setSearchValue(value);
+    if (!isInValid && value.length === 4) {
+      setIsTouched(true);
+    }
   }, []);
 
   const handleSearchClick = useCallback(() => {

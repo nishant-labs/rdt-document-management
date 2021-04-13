@@ -55,5 +55,9 @@
 		"prettier": "^2.2.1",
 		"sass": "^1.32.8"
 	},
-	"homepage": "http://nishant-labs.github.io/nishant-labs/rdt-document-management"
+	"homepage": "http://nishant-labs.github.io/rdt-document-management",
+	"author": {
+		"name": "Nishant Kumar Sinha",
+		"email": "nishant.decoder@gamil.com"
+	}
 }
