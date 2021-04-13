@@ -10,7 +10,7 @@ export const selectFormattedGdp = createSelector(
 				...result,
 				[indicator.countryiso3code]: {
 					countryName: indicator.country.value,
-					gdp: indicator.value || 'Not available',
+					gdp: indicator.value || 0,
 				},
 			}),
 			{}

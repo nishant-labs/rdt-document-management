@@ -7,7 +7,7 @@ import { StatisticsTable } from '../statistics-table';
 import { TypographyWithBox } from '../TypographyWithBox';
 import { withConsumers } from '../../hoc/withConsumers';
 
-class RDTAppManagement extends Component {
+export class RDTAppManagement extends Component {
 	render() {
 		const {
 			populationData,
@@ -34,7 +34,7 @@ class RDTAppManagement extends Component {
 					{isDataNotAvailable && (
 						<TypographyWithBox
 							type="body1"
-							text="Use search box to get statistics from world bank for a specific year."
+							text="Use search box to get Population and GDP statistics from world bank for a specific year."
 						/>
 					)}
 					{!isDataNotAvailable && !hasErrors && (

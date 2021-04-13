@@ -1,6 +1,6 @@
 import get from 'lodash/get';
 import { createSelector } from 'reselect';
-const selectIndicators = (state) => get(state, 'population.[1]')  || [];
+const selectIndicators = (state) => get(state, 'population.[1]') || [];
 
 export const selectFormattedPopulation = createSelector(
 	selectIndicators,
@@ -10,7 +10,7 @@ export const selectFormattedPopulation = createSelector(
 				...result,
 				[indicator.countryiso3code]: {
 					countryName: indicator.country.value,
-					population: indicator.value || 'Not available',
+					population: indicator.value || 0,
 				},
 			}),
 			{}
