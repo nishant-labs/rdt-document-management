@@ -6,8 +6,10 @@ import { GdpContext } from '../../context/gdp-context';
 import { PopulationContext } from '../../context/population-context';
 
 export const SearchBoxView = () => {
-	const { fetchGdp } = useContext(GdpContext);
-	const { fetchPopulation } = useContext(PopulationContext);
+	const { fetchGdp, resetGdpData } = useContext(GdpContext);
+	const { fetchPopulation, resetPopulationData } = useContext(
+		PopulationContext
+	);
 	const [hasError, setHasError] = useState(false);
 	const [searchValue, setSearchValue] = useState('');
 	const [isTouched, setIsTouched] = useState(false);
@@ -23,9 +25,17 @@ export const SearchBoxView = () => {
 	}, []);
 
 	const handleSearchClick = useCallback(() => {
+		resetGdpData();
+		resetPopulationData();
 		fetchGdp(searchValue);
 		fetchPopulation(searchValue);
-	}, [fetchGdp, fetchPopulation, searchValue]);
+	}, [
+		fetchGdp,
+		fetchPopulation,
+		resetGdpData,
+		resetPopulationData,
+		searchValue,
+	]);
 
 	const showError = hasError && isTouched;
 	const isButtonDisabled = hasError || !(isTouched && !!searchValue);
@@ -39,13 +49,20 @@ export const SearchBoxView = () => {
 					onChange={handleChange}
 					variant="outlined"
 					label="Enter Year"
-					helperText={showError && 'Enter 4 digit full year, e.g. 2019, 1997 etc...'}
+					helperText={
+						showError && 'Enter 4 digit full year, e.g. 2019, 1997 etc...'
+					}
 					fullWidth
 					required
 				/>
 			</Box>
 			<Box p={2}>
-				<Button variant="contained" color="primary" disabled={isButtonDisabled} onClick={handleSearchClick}>
+				<Button
+					variant="contained"
+					color="primary"
+					disabled={isButtonDisabled}
+					onClick={handleSearchClick}
+				>
 					Get statistics
 				</Button>
 			</Box>

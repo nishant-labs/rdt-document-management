@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { fetchEnvConfig } from '../utils/http';
+import { fetchEnvConfig } from '../../utils/http';
 
 export const EnvConfigContext = React.createContext();
 
