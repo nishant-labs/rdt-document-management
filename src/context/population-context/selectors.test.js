@@ -50,7 +50,9 @@ const emptyResponse = {
 
 describe('context/population-context/selectors', () => {
   test('should format population data for a valid response', () => {
-    const formattedPopulationData = selectFormattedPopulation(validPopulationResponse);
+    const formattedPopulationData = selectFormattedPopulation(
+      validPopulationResponse
+    );
     expect(formattedPopulationData).toEqual(expectedPopulationData);
   });
 
