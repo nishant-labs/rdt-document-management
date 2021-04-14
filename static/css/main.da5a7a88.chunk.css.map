@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/components/statistics-table/table-styles.scss"],"names":[],"mappings":"AAAA,YACE,YAAA,CACA,aAAA","file":"main.da5a7a88.chunk.css","sourcesContent":[".grid-table {\n  width: '62vw';\n  height: '50vh';\n}\n"]}
