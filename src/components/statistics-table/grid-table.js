@@ -7,8 +7,6 @@ import { currencyFormatter, numberFormatter } from '../../utils/number';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 
-import './table-styles.scss';
-
 const defaultColDef = {
   sortable: true,
   filter: true,
