@@ -1,18 +1,20 @@
 # rdt-document-management
 
 ## Assumptions (application is scalable enough to extend for any specific requirements)
+
 - By default api will get data for all countries in 2 separate calls
 - Only implemented default sorting and filtering
 - Only displaying country name, population and GDP
-- Displaying first 50 records only
+- Displaying first 50 records only for each record type
+- Could have combined SP.POP.TOTL and NY.GDP.MKTP.CD in a single call however in order to show multiple api handling I used calls separately
 
 ## Decisions taken
+
 - Instead of page loader used text based message
 - For simplicity only handled error scenarios where api failed for any reason and only showing message instead of dedicated error page
 
-
-
 ## Developers Guide
+
 Contributors can clone this repo using either `https` or `git` protocol as shown below
 
 ```
@@ -24,6 +26,7 @@ git clone https://github.com/nishant-labs/rdt-document-management.git
 cd rdt-document-management
 
 ```
+
 Then execute below commands to install and start local server
 
 ```
@@ -33,15 +36,13 @@ npm start
 
 Once local server is started open url http://localhost:3000/ in a browser to load application and start using it
 
-
 ## Demo Guide
 
 Once application is loaded you can see a text box where you can enter 4 digit year for which you want to see the GDP and population stats
 
 Below gif will help you use this website.
 
-![World Bank Statistics webapp demo](docs/demo.gif "World Bank Statistics")
-
+![World Bank Statistics webapp demo](docs/demo.gif 'World Bank Statistics')
 
 Use <a href="https://nishant-labs.github.io/rdt-document-management" target="_blank">Demo link</a> for live testing
 
