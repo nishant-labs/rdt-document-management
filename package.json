@@ -7,7 +7,7 @@
 		"@testing-library/jest-dom": "^5.11.10",
 		"@testing-library/react": "^11.2.6",
 		"@testing-library/user-event": "^12.8.3",
-		"ag-grid-community": "^25.1.0",
+		"ag-grid-community": "^32.0.1",
 		"ag-grid-react": "^25.1.0",
 		"lodash": "^4.17.21",
 		"react": "^17.0.2",
